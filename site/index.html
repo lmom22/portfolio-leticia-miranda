@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Letícia Miranda — portfólio de automação de processos, n8n e integrações de sistemas. Estudo de caso anonimizado e demonstração interativa.">
+  <meta name="theme-color" content="#123c35">
+  <title>Letícia Miranda — Automação & Integrações</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+  <header class="nav wrap">
+    <a href="#" class="brand" aria-label="Letícia Miranda, início"><span class="monogram">lm.</span><span>LETÍCIA MIRANDA</span></a>
+    <nav aria-label="Navegação principal"><a href="#projeto">Projeto</a><a href="#demonstracao">Demonstração</a><a href="#sobre">Sobre</a><a href="#contato" class="nav-contact">Contato <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main id="conteudo">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="dot"></span> AUTOMAÇÃO · INTEGRAÇÕES · PROCESSOS</p>
+        <h1>Regras de negócio.<br>Sistemas conectados.<br><em>Problemas resolvidos.</em></h1>
+        <p class="intro">Sou Letícia Miranda. Estou construindo minha trajetória em tecnologia com projetos de automação de atendimento, integrações por API e atenção ao que acontece fora do fluxo ideal.</p>
+        <div class="actions"><a href="#projeto" class="button primary">Conheça meu projeto <span aria-hidden="true">↘</span></a><a href="#demonstracao" class="text-link">Experimente a demonstração <span aria-hidden="true">→</span></a></div>
+        <p class="hero-note">Jundiaí, SP <span>•</span> Inglês fluente <span>•</span> Formação em Direito</p>
+      </div>
+      <div class="flow-art" aria-label="Ilustração de um fluxo: entrada, regras, integração, validação e resultado">
+        <div class="art-top"><span class="live-dot"></span> DA NECESSIDADE AO FLUXO <span class="art-number">01 / 04</span></div>
+        <div class="art-input"><span class="mini-label">ENTRADA</span><strong>“Quero agendar um atendimento.”</strong><span>Uma mensagem inicia o processo.</span></div>
+        <div class="connector"></div>
+        <div class="art-engine"><span class="engine-symbol" aria-hidden="true">⌘</span><div><span class="mini-label">REGRAS DE NEGÓCIO</span><strong>Entender. Validar. Encaminhar.</strong></div></div>
+        <div class="branch"><span></span><span></span></div>
+        <div class="art-outputs"><div><span class="mini-label">CAMINHO PREVISTO</span><strong>Integrar à agenda</strong><span>Unidade + serviço + disponibilidade</span></div><div><span class="mini-label">EXCEÇÃO</span><strong>Orientar o próximo passo</strong><span>Dados incompletos ou regra restritiva</span></div></div>
+        <p class="art-caption">Representação conceitual da arquitetura.</p>
+      </div>
+    </section>
+    <div class="stack-bar"><div class="wrap"><span class="stack-title">TECNOLOGIAS DO PROJETO</span><span>n8n</span><span>APIs REST</span><span>Webhooks</span><span>JavaScript</span><span>Cloudflare</span><span>WhatsApp Cloud API</span></div></div>
+    <section id="projeto" class="case-section wrap section-space">
+      <div class="section-heading"><div><p class="eyebrow">01 / ESTUDO DE CASO</p><h2>Um atendimento.<br><em>Muitas regras reais.</em></h2></div><p>Automação de atendimento e agendamento para uma operação de saúde. Identidade do cliente e detalhes operacionais preservados.</p></div>
+      <article class="case-card">
+        <div class="case-sidebar"><p class="mini-label">PROJETO REAL · 2026</p><h3>Assistente de atendimento e agendamento</h3><p>Desenvolvimento independente com apoio de IA, integração de serviços e testes de fluxos.</p><div class="case-pills"><span>n8n</span><span>API</span><span>Estado da conversa</span></div><a class="case-anchor" href="#demonstracao">Ver demonstração ilustrativa <span aria-hidden="true">↘</span></a></div>
+        <div class="case-detail">
+          <div class="tabs" role="tablist" aria-label="Detalhes do projeto"><button id="tab-problema" role="tab" aria-selected="true" aria-controls="panel-problema" data-tab="problema">O problema</button><button id="tab-construcao" role="tab" aria-selected="false" tabindex="-1" aria-controls="panel-construcao" data-tab="construcao">A construção</button><button id="tab-validacao" role="tab" aria-selected="false" tabindex="-1" aria-controls="panel-validacao" data-tab="validacao">A validação</button></div>
+          <div id="panel-problema" role="tabpanel" aria-labelledby="tab-problema" class="tab-panel" tabindex="0"><h4>Uma conversa precisava respeitar a operação.</h4><p>Agendar exigia identificar unidade, tipo de serviço e forma de atendimento, além de encaminhar o usuário para a agenda correspondente. O fluxo precisava preservar as escolhas e lidar com restrições específicas.</p><ul class="check-list"><li>Organizar etapas sem perder o contexto da conversa.</li><li>Distinguir serviços com agendas e regras diferentes.</li><li>Tratar opções inválidas, interrupções e restrições de atendimento.</li></ul></div>
+          <div id="panel-construcao" role="tabpanel" aria-labelledby="tab-construcao" class="tab-panel" tabindex="0" hidden><h4>Regras explícitas, integrações e controle de estado.</h4><p>Estruturei o chatbot no n8n com WhatsApp Cloud API e integração a uma plataforma de agendamento por APIs e webhooks. O código compartilhado inclui seleção de menus, resolução da agenda por serviço, bloqueios de opções e expiração da conversa.</p><ul class="check-list"><li>JavaScript para organizar decisões e mensagens.</li><li>Controle das etapas e dos dados da conversa.</li><li>Filtragem de eventos no Cloudflare para evitar execuções desnecessárias.</li></ul></div>
+          <div id="panel-validacao" role="tabpanel" aria-labelledby="tab-validacao" class="tab-panel" tabindex="0" hidden><h4>O fluxo ideal é só parte da entrega.</h4><p>O trabalho incluiu testes de seleção de unidade e serviço, disponibilidade e agendamento. Um teste de filtragem de eventos, registrado no meu currículo, passou de 30 para 10 execuções do n8n.</p><p class="evidence-note">Esse número descreve um teste pontual informado no projeto. Não representa uma medição contínua de produção, economia financeira ou redução de equipe.</p><ul class="check-list"><li>Revisão de regras e opções de encaminhamento.</li><li>Ajustes a partir de comportamentos observados nos testes.</li><li>Sem indicadores de receita ou ganho de produtividade publicados.</li></ul></div>
+          <div class="case-bottom"><span class="mini-label">MINHA CONTRIBUIÇÃO</span><p>Estruturação do fluxo, configuração das integrações, adaptação das regras e testes, utilizando IA como apoio ao desenvolvimento.</p></div>
+        </div>
+      </article>
+    </section>
+    <section id="demonstracao" class="demo-section section-space">
+      <div class="wrap">
+        <div class="section-heading"><div><p class="eyebrow">02 / EXPERIMENTE</p><h2>O que muda quando<br><em>a regra muda?</em></h2></div><p>Uma demonstração criada para este portfólio. Dados e regras fictícios, executados apenas no navegador. Nenhum agendamento é realizado.</p></div>
+        <div class="demo-layout">
+          <form id="demo-form" class="demo-controls"><p class="mini-label">CONFIGURE O CENÁRIO</p><label for="unit">Unidade</label><select id="unit" name="unit"><option value="a">Unidade A</option><option value="b">Unidade B</option></select><label for="service">Serviço</label><select id="service" name="service"><option value="consulta">Consulta</option><option value="exame">Exame</option></select><label for="payment">Forma de atendimento</label><select id="payment" name="payment"><option value="convenio">Convênio</option><option value="particular">Particular</option></select><button class="button primary" type="submit">Executar simulação <span aria-hidden="true">→</span></button><details class="demo-rules"><summary>Quais são as regras desta demonstração?</summary><p>A Unidade A recebe consultas e exames. Consultas particulares estão temporariamente bloqueadas na Unidade A. A Unidade B recebe apenas consultas. Um caminho permitido retorna uma solicitação pronta para consultar disponibilidade; não confirma um horário.</p></details></form>
+          <div class="demo-result" aria-live="polite" aria-atomic="true"><div class="result-heading"><span class="mini-label">RESULTADO DA SIMULAÇÃO</span><span id="result-status" class="status success">Pronto para consultar</span></div><h3 id="result-title">Solicitação pronta para consultar disponibilidade.</h3><p id="result-copy">Consulta por convênio na Unidade A: as regras permitem seguir para a consulta de horários.</p><ol id="result-steps" class="result-steps"><li><span>01</span> Identificar unidade e serviço</li><li><span>02</span> Validar regras de atendimento</li><li><span>03</span> Preparar consulta à agenda</li></ol><p class="demo-footnote">A interação demonstra decisões de fluxo. Não utiliza um modelo de IA, não chama APIs e não envia dados.</p></div>
+        </div>
+      </div>
+    </section>
+    <section id="sobre" class="wrap section-space about-section">
+      <div class="about-title"><p class="eyebrow">03 / SOBRE MIM</p><h2>Entender o contexto.<br><em>Construir com critério.</em></h2><p>Minha formação em Direito e a experiência com clientes e clínicas médicas contribuem para a forma como analiso processos, organizo regras e comunico decisões.</p></div>
+      <div class="about-content"><p class="about-lead">Sou advogada em transição para tecnologia, com experiência prática em um projeto de automação de atendimento e agendamento.</p><p>Quero desenvolver minha atuação em automação, integrações e implantação de sistemas. Meu interesse está na conexão entre o problema do usuário, as regras da operação e o funcionamento técnico da solução.</p><div class="skills-grid"><div><span class="mini-label">EXPERIÊNCIA PRÁTICA</span><p>n8n · APIs e webhooks · JavaScript aplicado ao fluxo · Cloudflare · WhatsApp Cloud API</p></div><div><span class="mini-label">EXPERIÊNCIA TRANSFERÍVEL</span><p>Análise de documentos · Organização de regras · Atendimento a clientes · Contratos e proteção de dados</p></div><div><span class="mini-label">FORMAÇÃO</span><p>Bacharelado em Direito<br>UNIFACCAMP, 2018</p></div><div><span class="mini-label">IDIOMAS</span><p>Português nativo<br>Inglês fluente</p></div></div><p class="evidence-note">A experiência jurídica contribui para a atenção a dados e responsabilidades. Não representa certificação em segurança da informação nem auditoria técnica da solução.</p></div>
+    </section>
+    <section id="contato" class="contact-section"><div class="wrap contact-inner"><div><p class="eyebrow">VAMOS CONVERSAR</p><h2>Uma oportunidade para<br><em>construir e evoluir.</em></h2><p>Interesse em posições de entrada em automação, integrações e implantação de sistemas.</p></div><div class="contact-links"><a href="mailto:advocacia.leticiamiranda@gmail.com">Enviar e-mail <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/let%C3%ADcia-miranda-mingireanov-02659437a" target="_blank" rel="noopener noreferrer">Conversar no LinkedIn <span aria-hidden="true">↗</span></a><button type="button" id="print-button">Imprimir / salvar em PDF <span aria-hidden="true">↓</span></button></div></div></section>
+  </main>
+  <footer class="wrap"><span>© 2026 Letícia Miranda</span><span>Portfólio profissional · Projeto anonimizado</span></footer>
+</body>
+</html>
