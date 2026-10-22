@@ -14,18 +14,18 @@ Portfólio profissional desenvolvido em HTML, CSS e JavaScript, sem dependência
 Com Python 3 instalado, execute na raiz do repositório:
 
 ```bash
-python3 -m http.server 8000 --directory site
+python3 -m http.server 8000 --directory docs
 ```
 
-Abra `http://localhost:8000`. Também é possível abrir `site/index.html` diretamente no navegador.
+Abra `http://localhost:8000`. Também é possível abrir `docs/index.html` diretamente no navegador.
 
 ## Estrutura
 
 | Arquivo | Função |
 |---|---|
-| `site/index.html` | Conteúdo e estrutura da página |
-| `site/style.css` | Layout responsivo e impressão |
-| `site/app.js` | Abas e simulação das regras |
+| `docs/index.html` | Conteúdo e estrutura da página |
+| `docs/style.css` | Layout responsivo e impressão |
+| `docs/app.js` | Abas e simulação das regras |
 
 ## Demonstração e evidências
 
@@ -46,3 +46,7 @@ O repositório contém somente a apresentação e a simulação. Não inclui cre
 ## Projeto relacionado
 
 [Workflow de atendimento e agendamento no n8n](https://github.com/lmom22/chatbot-agendamento-n8n). O acesso segue a visibilidade configurada para cada repositório.
+
+## Publicar com GitHub Pages
+
+Em Settings → Pages, selecione Deploy from a branch, branch main e pasta /docs. No GitHub Free, o repositório precisa ser público. O endereço só estará disponível após configurar e concluir a publicação.
